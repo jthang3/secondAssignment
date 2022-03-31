@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
     --color-green: #0b4d14;
     --color-black: #000;
     --color-gray: #c6bfbf;
+    --color-white: white;
+    --position-left: 7.5%;
 }
 
 /*main container */
@@ -18,7 +21,7 @@
 /* menu header */
 .menu {
     background-color: var(--color-black);
-    color: white;
+    color: var(--color-white);
     position: relative;
     height: 40px;
 }
@@ -56,7 +59,7 @@ ul > li:hover {
 
 .main__header--items {
     position: absolute;
-    left: 7.5%;
+    left: var(--position-left);
 }
 
 .main__header--items > p {
@@ -65,15 +68,47 @@ ul > li:hover {
 
 /*Body */
 .body__section--container {
+    display: block;
+    height: 65vh;
+}
+.body__section--secondary-container{
     width: 85%;
     margin: auto;
     display: flex;
     position: absolute;
-    left: 7.5%;
+    left: var(--position-left);
 }
 
 .body__section--paragraph {
     padding-right: 15px;
+}
+
+
+/*footer */
+.footer__footer--container {
+    background-color: var(--color-green);
+    height: 40px;
+    position: relative;
+}
+.footer__footer--secondary-container {
+    width: 85%;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.footer__footer--first-menu, .footer__footer--second-menu {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer__footer--first-menu-lists, .footer__footer--second-menu-lists {
+    display: flex;
+    list-style-type: none;
+}
+.footer__footer--second-menu {
+    right: var(--position-left);
 }
 
 /*smaller screen */ 
@@ -83,10 +118,13 @@ ul > li:hover {
         width: 80%;
         margin: auto;
     }
-    .body__section--container {
+    .body__section--secondary-container {
         display: block;
     }
-    .body__section--paragraph {
+    .body__section--paragraph, .body__section--container {
         margin-bottom: 50px;
+    }
+    .footer__footer--first-menu-lists, .footer__footer--second-menu-lists {
+        font-size: 10px;
     }
   }
