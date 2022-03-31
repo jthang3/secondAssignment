@@ -75,8 +75,7 @@ ul > li:hover {
     width: 85%;
     margin: auto;
     display: flex;
-    position: absolute;
-    left: var(--position-left);
+    width: 85%;
 }
 
 .body__section--paragraph {
