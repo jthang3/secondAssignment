@@ -75,7 +75,6 @@ ul > li:hover {
     width: 85%;
     margin: auto;
     display: flex;
-    width: 85%;
 }
 
 .body__section--paragraph {
@@ -128,5 +127,6 @@ ul > li:hover {
     }
     .footer__footer--container {
         top: 150px;
+        margin-top: 200px;
     }
   }
