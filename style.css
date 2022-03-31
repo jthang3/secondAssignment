@@ -127,4 +127,7 @@ ul > li:hover {
     .footer__footer--first-menu-lists, .footer__footer--second-menu-lists {
         font-size: 10px;
     }
+    .footer__footer--container {
+        top: 150px;
+    }
   }
